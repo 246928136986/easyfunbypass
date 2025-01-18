@@ -1,0 +1,1 @@
+bypass easyfun ads
