@@ -17,6 +17,15 @@
         <iframe id="myIframe" src="basic.html?start=1">
         </iframe>
         <script>
+
+
+        // Disable touch events that trigger page refresh when dragging down
+        document.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+
+        </script>
+        <script>
 const intervalId = setInterval(() => {
            // Get the iframe element
            var iframe = document.getElementById('myIframe');
