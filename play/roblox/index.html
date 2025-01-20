@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            * {
+                width: 100vw;
+                height: 100vh;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                position: fixed;    
+                overscroll-behavior: none;    
+            }
+        </style>
+
+    </head>
+    <body>
+        <iframe id="myIframe" src="basic.html"></iframe>
+
+        <script>
+const intervalId = setInterval(() => {
+
+        // Disable touch events that trigger page refresh when dragging down
+        document.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+
+           // Get the iframe element
+           var iframe = document.getElementById('myIframe');
+            
+            // Access the iframe's content window
+            var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            
+            // Find and remove the element with class "ads" from the iframe content
+            var adsElement = iframeDoc.querySelector('.ads');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.w-100v');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.tag-drawer-root');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.ads-h');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.relative.mt-10.w-full');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.to-top-btn');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.p-0');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.flex.items-center.view-content');
+            if (adsElement) {
+                adsElement.remove();
+            }        
+            var adsElement = iframeDoc.querySelector('.w-full.flex.justify-center.transition-opacity-300.bg-gray-2.bg-op-0');
+            if (adsElement) {
+                adsElement.remove();
+            }     
+            var adsElement = iframeDoc.querySelector('.w-100vw.transition-all-300');
+            if (adsElement) {
+                adsElement.remove();
+            }      
+            var adsElement = iframeDoc.querySelector('.flex.flex-col.bg-gray-1.view-content');
+            if (adsElement) {
+                adsElement.remove();
+            }   
+            var adsElement = iframeDoc.querySelector('.w-full.flex.flex-col');
+            if (adsElement) {
+                adsElement.remove();
+            }       
+            var adsElement = iframeDoc.querySelector('.relative.mt-2.flex-center.cursor-pointer.items-center.rd-2');
+            if (adsElement) {
+                adsElement.remove();
+            }       
+            var targetDiv = iframeDoc.querySelector('.relative.flex.view-content');
+
+
+            var targetDiv = iframeDoc.querySelector('.relative.flex.view-content');
+
+if (targetDiv) {
+    targetDiv.style.margin = '0';
+    targetDiv.style.padding = '0';
+}
+
+
+var targetDiv = iframeDoc.querySelector('.bg-gray-1');
+
+if (targetDiv) {
+    targetDiv.style.height = '100%';
+    targetDiv.style.overflow = 'hidden';
+    targetDiv.style.position = 'fixed';
+    targetDiv.style.width = '100%';
+
+}
+
+
+var targetDiv = iframeDoc.querySelector('.flex.flex-col.items-center');
+
+if (targetDiv) {
+    targetDiv.style.margin = '15%';
+
+
+}
+
+
+
+
+var targetDiv = iframeDoc.querySelector('.popover-main.pointer-events-auto.isolate.max-h-full.touch-pan-x.touch-pan-y.of-y-auto.overscroll-contain');
+
+if (targetDiv) {
+    targetDiv.style.transform = 'translate(-100%, 100px)';
+
+
+}
+
+
+
+
+
+var adsElement = iframeDoc.querySelector('.c-op-50');
+    if (adsElement) {
+        adsElement.textContent = 'You are not signed in.';
+} 
+
+
+
+
+
+
+
+var adsElement = iframeDoc.querySelector('.mt-3');
+    if (adsElement) {
+        adsElement.textContent = 'Roblox Bypass';
+} 
+
+
+
+
+var adsElement = iframeDoc.querySelector('.addclass1');
+if (adsElement) {
+
+}
+else {
+    const parentElement = iframeDoc.querySelector(".relative.z-10.flex.flex-col.bg-gray-3"); 
+const newChild = iframeDoc.createElement("p");
+newChild.textContent = "This website is a bypassed version of EasyFun.gg. Logging in with an EasyFun account will give you 6 hours of play time per day, instead of the 30 that are allowed without a sign-in.";
+parentElement.appendChild(newChild); 
+newChild.className = "addclass1 c-#fff c-op-50 flex-center";
+newChild.style.margin = "20px";
+}
+
+
+
+
+
+
+        }, 500);
+
+
+ 
+
+
+
+        </script>
+    </body>
+</html>
