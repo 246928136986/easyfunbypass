@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/apexnet.jpg" type="image/png">
+  <title>nova</title>
+
+  <!-- Meta tags for SEO -->
+  <meta property="og:title" content="outerworld">
+  <meta property="og:description"
+    content="outerworld proxy is an unblocker, a really cool unblocker.
+    " />
+  <meta property="og:image" content="assets/apexnet.jpg" />
+  <meta name="theme-color" content="#262262" />
+
+  <!-- Styles and fonts -->
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="./uv/uv.bundle.js"></script>
+  <script src="./uv/uv.config.js"></script>
+  <script src="./assets/register-sw.js"></script>
+  <style>
+    /* Some styling to make it look good */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #151515;
+  color: white;
+  font-family: 'IBM Plex Sans';
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 80%;
+  transform: translate(-50%, -200px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.header {
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  height: 42px;
+  width: 42px;
+}
+
+.description {
+  font-size: 16px;
+  color: #afafaf;
+}
+
+.input {
+  width: 100%;
+  background-color: #1e1e1e;
+  border: 0;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  outline: none;
+  transition: color;
+  transition-duration: 100ms;
+  box-shadow: 0 0 10px #000000;
+}
+
+.input:disabled {
+  color: #757575;
+}
+
+.logo {
+  height: 55px;
+  width: 55px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 24px #685dff);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 18px;
+  padding-left: 24px;
+  padding-right: 30px;
+}
+
+.footer a,
+.footer a:visited {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-underline-offset: 2.5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer div {
+  display: flex;
+  gap: 26px;
+}
+   .bttn-container {
+              position: absolute;
+              bottom: -40%;
+              left: 50%;
+              transform: translateX(-50%);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+           }
+
+        .bttn {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: transform 0.5s;
+            margin: 0 5px; 
+        }
+
+        .bttn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 5px #000000;
+            background: -webkit-linear-gradient(180deg, #d53369, #daae51);
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+::placeholder {
+  background: -webkit-linear-gradient(180deg, #d53369, #daae51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 80%;
+}
+
+
+b {
+  background: -webkit-linear-gradient(180deg, #d53369, #daae51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    order: 0;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.game-img {
+    width: 150px;
+    height: 150px;
+    border-width: 5px;
+    border-color: #FFFFFF;
+    border-radius: 20%;
+}
+
+.game-a {
+    margin: 10px;
+    border: #FFFFFF;
+}
+
+#featured {
+    background: -webkit-linear-gradient(180deg, #d53369, #daae51);
+    border-radius: 30px;
+    padding-top: 30px;
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="font-weight: 400; font-size: 50px;">
+        easyfun 
+      <b style="font-weight: 900;">bypass</b> 
+      <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://easyfun.gg&size=256" width="40px">
+    </h1>
+<p class="description">
+    play mobile games in-browser, no download needed! this is based off a website called easyfun.gg, but I haved bypassed it, so there are no annoying ads to deal with.<br><br>
+    if you do not log in with an easyfun account, you will have a 30 minute game time limit each day. if you sign in, you will have 6 hours each day. if you don't already have an easyfun account, you can instead use one of the shared burner accounts listed at the bottom of the page.
+</p>
+
+
+<div class="flex-container">
+
+    <a href="play/block-blast/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/72afb86e11574bfdba304761042426db1735490805.jpg" class="game-img">
+    </a>
+
+    <a href="play/brawl-stars/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/f1877ab149a7432aaec5c0ef036d99ca1728447618.png" class="game-img">
+    </a>
+
+    <a href="play/capybara-go/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/8c851983c5d74bd6862072f0275096ca1731673516.png" class="game-img">
+    </a>
+
+    <a href="play/clash-of-clans/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/941e429e4b164626b661746ff1f930e21728448648.png" class="game-img">
+    </a>
+
+    <a href="play/fortnite/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/6b4ef21be1814067a1533e0b6e424fe61735885643.png" class="game-img">
+    </a>
+
+    <a href="play/genshin-impact/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/4dfe62cd7c3f4b2dafe7642693b652de1728456516.png" class="game-img">
+    </a>
+
+    <a href="play/honkai-star-rail/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/26b472ced11e40b9853d2ca6bde314e41728458125.png" class="game-img">
+    </a>
+
+    <a href="play/hillclimb/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/aceae75302fd492a89bb67b0efdb6daf1728469851.png" class="game-img">
+    </a>
+
+    <a href="play/pubg-mobile/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/8da70c84c2ab4197ab447488fe6ef73f1728469957.png" class="game-img">
+    </a>
+
+    <a href="play/sims-mobile/" class="game-a">
+        <img src="https://res.ldrescdn.com/rms/ldplayer/process/img/261225f8fcd54de3b279f86f080c02ca1731680650.png" class="game-img">
+    </a>
+
+
+</div>
+<p class="description">
+    log in with one of these shared easyfun accounts to get multiple hours of play time each day. just open a game, click "login", and put in the details for any one of these accounts.
+<br><br>
+account 1:<br><br>
+email: 67ka3ffcgr9p@kabamail.com<br>
+password: nova23
+<br><br><br>
+account 2:<br><br>
+email: 5qzb8ilhf378@ikomail.com<br>
+password: nova87
+<br><br><br>
+account 3:<br><br>
+email: 1hfirpgt6vth@solerbe.net<br>
+password: nova34
+<br><br><br>
+account 4:<br><br>
+email: jzarexhvthcu@eartin.net<br>
+password: nova68
+<br><br><br>
+these accounts may not work. i reccomend that you create your own easyfun account, but these accounts are available to use if you can't.
+
+<br><br><br><br><br><br><br>
+
+</p>
+  </div>
+
+
+
+  <script src="./assets/script.js" defer></script>
+</body>
+
+</html>
