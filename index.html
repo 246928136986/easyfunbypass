@@ -213,8 +213,15 @@ b {
     border-radius: 30px;
     padding-top: 30px;
 }
+* {
+                touch-action: manipulation;
+            }
   </style>
-
+<script>
+  document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+  });
+</script>
 </head>
 
 <body>

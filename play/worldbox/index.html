@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta charset="UTF-8">
 
-        <style>
+
+                <style>
             * {
                 width: 100vw;
                 height: 100vh;
@@ -10,10 +13,30 @@
                 margin: 0;
                 padding: 0;
                 position: fixed;    
-                overscroll-behavior: none;    
+                overscroll-behavior: none;   
+                touch-action: manipulation;
+
+            }
+
+            iframe {
+                touch-action: manipulation;
+             
             }
         </style>
-
+<script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  
+    document.addEventListener('DOMContentLoaded', function() {
+      var iframes = document.querySelectorAll('iframe');
+      iframes.forEach(function(iframe) {
+        iframe.contentWindow.document.addEventListener('touchmove', function(event) {
+          event.preventDefault();
+        });
+      });
+    });
+  </script>
     </head>
     <body>
         <iframe id="myIframe" src="basic.html"></iframe>
@@ -25,7 +48,9 @@ const intervalId = setInterval(() => {
         document.addEventListener('touchmove', function(e) {
             e.preventDefault();
         }, { passive: false });
-
+        document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
            // Get the iframe element
            var iframe = document.getElementById('myIframe');
             
@@ -155,7 +180,13 @@ newChild.className = "addclass1 c-#fff c-op-50 flex-center";
 newChild.style.margin = "20px";
 }
 
+// Select all elements on the page
+const allElements = iframeDoc.querySelectorAll('*');
 
+// Set the "touch-action" property for each element
+allElements.forEach(element => {
+    element.style.touchAction = 'manipulation';
+});
 
 
 
