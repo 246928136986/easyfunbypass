@@ -73,6 +73,17 @@
         }
     </style>
     <script src="../../res.ldrescdn.com/easyfun/_next/static/chunks/polyfills-42372ed130431b0a.js" nomodule=""></script>
+    <script>
+        document.addEventListener('gesturestart', function (e) {
+          e.preventDefault();
+        });
+      
+        document.addEventListener('touchstart', function(event) {
+          if (event.target.nodeName === 'IFRAME') {
+            event.preventDefault();
+          }
+        });
+      </script>
 </head>
 
 <body class="bg-gray-1">
